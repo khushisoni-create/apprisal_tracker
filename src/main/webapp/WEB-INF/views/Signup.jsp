@@ -7,6 +7,25 @@
 <title>Signup</title>
 </head>
 <body>
+	<h2>Signup</h2>
+	<Form action="saveuser" method="post">
+	 FirstName: <input type="text" name="firstName"/><br><br>
+	 LastName: <input type="text" name="lastName"/><br><br>
+	 
+	 Gender: Male<input type="radio" name="gender" value="male">
+	 		FeMale<input type="radio" name="gender" value="female"><br><br>
+	 		
+	 Email:<input type="text" name="email"/><br><br>
+	 
+	 password:<input type="password" name="password"/><br><br>
+	 
+	 <input type="submit" value="Signup"/>
+	
+	
+	
+	
+	</Form>
 
+	<a href="login">Login</a>
 </body>
 </html>

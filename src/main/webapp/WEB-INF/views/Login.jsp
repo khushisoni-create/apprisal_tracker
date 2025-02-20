@@ -8,5 +8,10 @@
 </head>
 <body>
 
+	<h2>Login</h2>
+	<br><br>
+	
+	<a href="signup">Signup</a>
+	<a href="forgetpassword">ForgetPassword</a>
 </body>
 </html>

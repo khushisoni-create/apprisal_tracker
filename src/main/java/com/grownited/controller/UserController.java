@@ -1,7 +1,10 @@
 package com.grownited.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -33,5 +36,17 @@ public class UserController {
 	public String saveUser(UserEntity entityUser) {
 		repositoryUser.save(entityUser);
 		return "Login";
-	}	
+	}	 
+	
+	@GetMapping("listuser")
+	public String listMember(Model model) {
+		List<UserEntity> userList =repositoryUser.findAll(); 
+
+	
+		model.addAttribute("userList",userList );
+		// dataName , dataValue
+
+		return "ListUser";
+	}
+
 }

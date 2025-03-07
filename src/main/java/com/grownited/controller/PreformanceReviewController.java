@@ -3,9 +3,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import com.grownited.entity.FeedbackEntity;
-import com.grownited.entity.PreformanceReviewEntity;
+import com.grownited.entity.PerformanceReviewEntity;
+import com.grownited.entity.PerformanceReviewEntity;
 import com.grownited.repository.FeedbackRepository;
-import com.grownited.repository.PreformanceReviewRepository;
+import com.grownited.repository.PerformanceReviewRepository;
+import com.grownited.repository.PerformanceReviewRepository;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @Controller
 public class PreformanceReviewController {
  @Autowired
- 	PreformanceReviewRepository repositorPreformanceReview ;
+ 	PerformanceReviewRepository repositorPreformanceReview ;
  
  
  @GetMapping("newPreformanceReview ")
@@ -24,7 +26,7 @@ public class PreformanceReviewController {
 	}
  
  @PostMapping("savePreformanceReview")
- public String savePreformanceReview(PreformanceReviewEntity entityPreformanceReview) {
+ public String savePreformanceReview(PerformanceReviewEntity entityPreformanceReview) {
 	 repositorPreformanceReview.save(entityPreformanceReview);
     
      return "";

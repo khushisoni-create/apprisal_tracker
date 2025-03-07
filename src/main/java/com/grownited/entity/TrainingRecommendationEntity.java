@@ -7,41 +7,35 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="TrainingRecommendation")
-
+@Table(name="trainingrecommendations")
 public class TrainingRecommendationEntity {
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY )
-	private Integer recommendationId;
-	private Integer appraisalId;
-	private Integer employeeId;
-	private Integer recommendedBy;
-	private String trainingName;
-	private String trainingDescription;
-	private String status;
-	public Integer getRecommendationId() {
-		return recommendationId;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer recommendationID;
+	private Integer apprisalID; //FK
+	private Integer employeeID; //FK
+	private String trainingName; //name of the recommended training
+	private String trainingDescritpion; //description of the training
+	private String status; //status of the training(e.g. recommended, completed)
+	private String recommendedBy;
+	public Integer getRecommnedationID() {
+		return recommendationID;
 	}
-	public void setRecommendationId(Integer recommendationId) {
-		this.recommendationId = recommendationId;
+	public void setRecommnedationID(Integer recommnedationID) {
+		this.recommendationID = recommnedationID;
 	}
-	public Integer getAppraisalId() {
-		return appraisalId;
+	public Integer getApprisalID() {
+		return apprisalID;
 	}
-	public void setAppraisalId(Integer appraisalId) {
-		this.appraisalId = appraisalId;
+	public void setApprisalID(Integer apprisalID) {
+		this.apprisalID = apprisalID;
 	}
-	public Integer getEmployeeId() {
-		return employeeId;
+	public Integer getEmployeeID() {
+		return employeeID;
 	}
-	public void setEmployeeId(Integer employeeId) {
-		this.employeeId = employeeId;
-	}
-	public Integer getRecommendedBy() {
-		return recommendedBy;
-	}
-	public void setRecommendedBy(Integer recommendedBy) {
-		this.recommendedBy = recommendedBy;
+	public void setEmployeeID(Integer employeeID) {
+		this.employeeID = employeeID;
 	}
 	public String getTrainingName() {
 		return trainingName;
@@ -49,11 +43,11 @@ public class TrainingRecommendationEntity {
 	public void setTrainingName(String trainingName) {
 		this.trainingName = trainingName;
 	}
-	public String getTrainingDescription() {
-		return trainingDescription;
+	public String getTrainingDescritpion() {
+		return trainingDescritpion;
 	}
-	public void setTrainingDescription(String trainingDescription) {
-		this.trainingDescription = trainingDescription;
+	public void setTrainingDescritpion(String trainingDescritpion) {
+		this.trainingDescritpion = trainingDescritpion;
 	}
 	public String getStatus() {
 		return status;
@@ -61,8 +55,12 @@ public class TrainingRecommendationEntity {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	public String getRecommendedBy() {
+		return recommendedBy;
+	}
+	public void setRecommendedBy(String recommendedBy) {
+		this.recommendedBy = recommendedBy;
+	}
 	
 	
-	
-
 }

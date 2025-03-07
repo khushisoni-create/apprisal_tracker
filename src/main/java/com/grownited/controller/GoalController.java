@@ -22,11 +22,11 @@ public class GoalController {
 		return "NewGoal";
 	}
 	
-	@PostMapping("savegoal")
-	public String saveGoal(GoalEntity entityGoal) {
-		repositorygoal.save(entityGoal);	
-		return "";
-	}
+//	@PostMapping("savegoal")
+//	public String saveGoal(GoalEntity entityGoal) {
+//		repositorygoal.save(entityGoal);	
+//		return "";
+//	}
 	
 	
 	

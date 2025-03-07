@@ -1,4 +1,6 @@
-package com.grownited.entity;
+	package com.grownited.entity;
+
+import java.util.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,7 +22,7 @@ public class UserEntity {
 		private String gender;
 		private String contactNum;
 		private String role;
-		private String createdAt;
+		private Date createdAt;
 		private String status;
 		private String dateOfJoining;
 		private String position;
@@ -75,10 +77,10 @@ public class UserEntity {
 		public void setRole(String role) {
 			this.role = role;
 		}
-		public String getCreatedAt() {
+		public Date getCreatedAt() {
 			return createdAt;
 		}
-		public void setCreatedAt(String createdAt) {
+		public void setCreatedAt(Date createdAt) {
 			this.createdAt = createdAt;
 		}
 		public String getStatus() {

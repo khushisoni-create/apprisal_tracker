@@ -15,7 +15,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #4C516D;
+  background: #0C2340;
   color: #f6f9ff;
 }
 
@@ -610,7 +610,8 @@ h6 {
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
-  background-color:#002244;
+  background-color:#003153;
+ 
 }
 
 @media (max-width: 1199px) {
@@ -699,7 +700,7 @@ h6 {
 
 .sidebar-nav .nav-link.collapsed {
   color:white;
-  background: #002244;
+  background: #003153;
 }
 
 .sidebar-nav .nav-link.collapsed i {
@@ -707,12 +708,12 @@ h6 {
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #002244;
+  color: #003153;
   background: #f6f9ff;
 }
 
 .sidebar-nav .nav-link:hover i {
-  color: #002244;
+  color: #003153;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
